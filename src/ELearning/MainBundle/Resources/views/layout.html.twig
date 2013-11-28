@@ -1,0 +1,44 @@
+<html>
+<head>
+    <title>
+        {% block Title %}E-Learning{% endblock %}
+    </title>
+
+    {% block MetaData %}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        {# TODO change @baseFontSize from 14px to 13px #}
+    {% endblock %}
+
+    {% block Stylesheets %}
+        <link href="{{ asset("bundles/E-learning/css/bootstrap.css") }}" rel="stylesheet">
+        <link href="{{ asset("bundles/E-learning/css/bootstrap-responsive.css") }}" rel="stylesheet">
+        <link href="{{ asset("bundles/E-learning/css/E-learning.css") }}" rel="stylesheet">
+        <link href="{{ asset("bundles/E-learning/css/font-awesome.min.css") }}" rel="stylesheet">
+    {% endblock %}
+
+    {% block JavaScripts %}
+        <script src="{{ asset("bundles/E-learning/js/bootstrap.js") }}"></script>
+        <script src="{{ asset("bundles/E-learning/js/jquery.js") }}"></script>
+        <script src="{{ asset("bundles/E-learning/js/bootstrap-transition.js") }}"></script>
+        <script src="{{ asset("bundles/E-learning/js/bootstrap-alert.js") }}"></script>
+        <script src="{{ asset("bundles/E-learning/js/bootstrap-modal.js") }}"></script>
+        <script src="{{ asset("bundles/E-learning/js/bootstrap-dropdown.js") }}"></script>
+        <script src="{{ asset("bundles/E-learning/js/bootstrap-scrollspy.js") }}"></script>
+        <script src="{{ asset("bundles/E-learning/js/bootstrap-tab.js") }}"></script>
+        <script src="{{ asset("bundles/E-learning/js/bootstrap-tooltip.js") }}"></script>
+        <script src="{{ asset("bundles/E-learning/js/bootstrap-popover.js") }}"></script>
+        <script src="{{ asset("bundles/E-learning/js/bootstrap-button.js") }}"></script>
+        <script src="{{ asset("bundles/E-learning/js/bootstrap-collapse.js") }}"></script>
+        <script src="{{ asset("bundles/E-learning/js/bootstrap-carousel.js") }}"></script>
+        <script src="{{ asset("bundles/E-learning/js/bootstrap-typeahead.js") }}"></script>
+        <script src="{{ asset("bundles/E-learning/js/bootstrap-affix.js") }}"></script>
+        <script src="{{ asset("bundles/E-learning/js/application.js") }}"></script>
+    {% endblock %}
+
+</head>
+
+{% block Body %}
+{% endblock %}
+
+</html>

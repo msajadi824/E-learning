@@ -1,0 +1,7 @@
+e_learning_main_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: ELearningMainBundle:Default:index }
+
+_member:
+    resource: "@ELearningMainBundle/Resources/config/Member/routing.yml"
+    prefix:   /member
