@@ -1,4 +1,5 @@
 <?php
+
 namespace ELearning\MainBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;

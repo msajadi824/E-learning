@@ -5,3 +5,14 @@ services:
 #    e_learning_main.example:
 #        class: %e_learning_main.example.class%
 #        arguments: [@service_id, "plain_value", %parameter%]
+
+    authentication_handler:
+            class: ELearning\MainBundle\Handler\AuthenticationHandler
+            arguments: [@router, @security.context]
+
+
+    elearning_user.registration.form.type:
+        class: ELearning\MainBundle\Form\Type\RegistrationFormType
+        arguments: [%fos_user.model.user.class%]
+        tags:
+            - { name: form.type, alias: elearning_user_registration }

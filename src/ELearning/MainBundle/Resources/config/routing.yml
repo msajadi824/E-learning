@@ -1,3 +1,20 @@
 e_learning_main_homepage:
     pattern:  /
     defaults: { _controller: ELearningMainBundle:Default:index }
+admin:
+    resource: "@ELearningMainBundle/Resources/config/admin/routing.yml"
+    prefix: /admin
+
+manager:
+    resource: "@ELearningMainBundle/Resources/config/manager/routing.yml"
+    prefix: /manager
+
+teacher:
+    resource: "@ELearningMainBundle/Resources/config/teacher/routing.yml"
+    prefix: /teacher
+
+student:
+    resource: "@ELearningMainBundle/Resources/config/student/routing.yml"
+    prefix: /student
+
+
