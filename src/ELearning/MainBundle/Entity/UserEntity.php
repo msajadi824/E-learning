@@ -1,8 +1,7 @@
 <?php
 namespace ELearning\MainBundle\Entity;
 use Doctrine\ORM\Mapping AS ORM;
-
-use FOS\UserBundle\Entity\User as BaseUser;
+use FOS\UserBundle\Model\User as BaseUser;
 
 /** 
  * @ORM\Entity

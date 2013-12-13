@@ -1,11 +1,15 @@
 <html>
 <head>
+
     <title>
-        {% block Title %}E-Learning{% endblock %}
+        {% block Title %}آموزش آنلاین{% endblock %}
     </title>
 
     {% block MetaData %}
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="author" content="">
 
         {# TODO change @baseFontSize from 14px to 13px #}
     {% endblock %}
@@ -15,6 +19,14 @@
         <link href="{{ asset("bundles/E-learning/css/bootstrap-responsive.css") }}" rel="stylesheet">
         <link href="{{ asset("bundles/E-learning/css/E-learning.css") }}" rel="stylesheet">
         <link href="{{ asset("bundles/E-learning/css/font-awesome.min.css") }}" rel="stylesheet">
+        <link href="{{ asset("bundles/E-learning/css/style-responsive.css") }}" rel="stylesheet">
+        <link href="{{ asset("bundles/E-learning/css/style.css") }}" rel="stylesheet">
+
+        <link rel="shortcut icon" href="../../../../../web/bundles/E-learning/ico/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../../../web/bundles/E-learning/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../../../../web/bundles/E-learning/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../../../web/bundles/E-learning/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="../../../../../web/bundles/E-learning/ico/apple-touch-icon-57-precomposed.png">
     {% endblock %}
 
     {% block JavaScripts %}
@@ -33,7 +45,13 @@
         <script src="{{ asset("bundles/E-learning/js/bootstrap-carousel.js") }}"></script>
         <script src="{{ asset("bundles/E-learning/js/bootstrap-typeahead.js") }}"></script>
         <script src="{{ asset("bundles/E-learning/js/bootstrap-affix.js") }}"></script>
-        <script src="{{ asset("bundles/E-learning/js/application.js") }}"></script>
+        <script src="{{ asset("bundles/E-learning/js/jquery.nivo.slider.pack.js") }}"></script>
+        <script src="{{ asset("bundles/E-learning/js/jquery.isotope.min.js") }}"></script>
+        <script src="{{ asset("bundles/E-learning/js/bootstrap-alert.js") }}"></script>
+        <script src="{{ asset("bundles/E-learning/js/formvalidation.js") }}"></script>
+        <script src="{{ asset("bundles/E-learning/js/smoothscroll.js") }}"></script>
+        <script src="{{ asset("bundles/E-learning/js/html5placeholder.jquery.js") }}"></script>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     {% endblock %}
 
 </head>

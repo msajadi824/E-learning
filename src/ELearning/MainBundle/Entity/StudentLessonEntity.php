@@ -18,16 +18,6 @@ class StudentLessonEntity
     private $id;
 
     /** 
-     * @ORM\Column(type="integer", nullable=false)
-     */
-    private $stuid;
-
-    /** 
-     * @ORM\Column(type="integer", nullable=false)
-     */
-    private $lessonid;
-
-    /** 
      * @ORM\Column(type="boolean", nullable=false)
      */
     private $accept;
